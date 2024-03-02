@@ -1,31 +1,36 @@
 .content-box { /* The big box */
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin: 20px 20px 10px; 
-    border-radius: 6px;
-    background-color: #f9f9f9;
-    text-align: center;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px 20px 10px; 
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
 
-  }
-  
-  
-  .content-box h2 {
-    margin-bottom: 10px;
-  }
-  
+.content-box h2 {
+  margin-bottom: 10px;
+}
 
-  /* color of the access link box */
-  .content-box a {
-    display: inline-block;
-    padding: 10px;
-    background-color: #02449b;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-  }
-  
+/* color of the access link box */
+.content-box a, .content-box button {
+  display: block; /* Cambiado de inline-block a block */
+  padding: 10px;
+  margin-bottom: 10px; /* Añadido para agregar espacio debajo del botón/enlace */
+  background-color: #02449b;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
 /* when mouse moves on the link box, it will change color */
-  .content-box a:hover {
-    background-color: #4245e0;
-  }
+.content-box a:hover, .content-box button:hover {
+  background-color: #4245e0;
+}
+
+/* Estilos específicos para el botón "Mostrar Temas" si es necesario */
+.content-box button {
+  /* Añade aquí estilos específicos para el botón si los necesitas */
+  background-color: #dddddd; /* Por ejemplo, un color de fondo diferente */
+  color: black; /* Y un color de texto diferente */
+}
