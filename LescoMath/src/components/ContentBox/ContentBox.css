@@ -1,0 +1,31 @@
+.content-box { /* The big box */
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 20px 20px 10px; 
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    text-align: center;
+
+  }
+  
+  
+  .content-box h2 {
+    margin-bottom: 10px;
+  }
+  
+
+  /* color of the access link box */
+  .content-box a {
+    display: inline-block;
+    padding: 10px;
+    background-color: #02449b;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+/* when mouse moves on the link box, it will change color */
+  .content-box a:hover {
+    background-color: #4245e0;
+  }

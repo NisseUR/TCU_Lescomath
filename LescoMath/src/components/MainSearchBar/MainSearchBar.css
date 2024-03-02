@@ -1,0 +1,22 @@
+.search-bar {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.search-input {
+  height: 2rem;
+  padding: 0 2rem;
+  margin-right: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.7rem;
+}
+
+.search-button {
+  height: 2.4rem;
+  padding: 0 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}

@@ -1,0 +1,11 @@
+.main_title-header {
+  background-color: #dd1478; /* Color de fondo */
+  padding: 20px; /* Espaciado interno */
+  color: white; /* Color del texto */
+  text-align: center; /* Alineación del texto */
+}
+
+h1 {
+  margin: 0; /* Elimina el margen por defecto del h1 */
+  font-size: 2rem; /* Tamaño de la fuente */
+}
