@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import './ContentBox.css';
 
-// Un nuevo componente para manejar los temas dentro de cada nivel
-function Topic({ title, children }) {
+function Topic({ title, children, levelClass }) { // Añade levelClass a los props
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div>
-      <button className="topic-title" onClick={() => setIsOpen(!isOpen)}>{title}</button>
-      {isOpen && <div className="topic-content">{children}</div>}
+      <button className={`topic-title ${levelClass}`} onClick={() => setIsOpen(!isOpen)}>{title}</button>
+      {isOpen && <div className={`topic-content ${levelClass}`}>{children}</div>}
     </div>
   );
 }
@@ -24,11 +23,10 @@ function ContentBox({ repoName, repoUrl, levels }) {
       {showDetails && (
         <div className="level-container">
           {levels.map((level) => (
-            <Topic key={level.name} title={level.name}>
+            <Topic key={level.name} title={level.name} levelClass={`nivel-${level.name.toLowerCase()}`}>
               {level.topics.map((topic) => (
                 <Topic key={topic.name} title={topic.name}>
-                  {/* Aquí iría el contenido del tema, como texto o componentes adicionales */}
-                  <p>{topic.content}</p>
+                  <p>{topic.content}</p> {/* Considera agregar levelClass aquí si quieres aplicar estilos específicos a los contenidos */}
                 </Topic>
               ))}
             </Topic>

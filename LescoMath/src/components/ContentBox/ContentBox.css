@@ -1,7 +1,7 @@
-.content-box { /* The big box */
+.content-box {
   border: 1px solid #ddd;
   padding: 20px;
-  margin: 20px 20px 10px; 
+  margin: 20px;
   border-radius: 6px;
   background-color: #f9f9f9;
   text-align: center;
@@ -9,28 +9,54 @@
 
 .content-box h2 {
   margin-bottom: 10px;
+  color: #333;
 }
 
-/* color of the access link box */
 .content-box a, .content-box button {
-  display: block; /* Cambiado de inline-block a block */
+  display: block;
   padding: 10px;
-  margin-bottom: 10px; /* Añadido para agregar espacio debajo del botón/enlace */
-  background-color: #02449b;
+  margin-bottom: 10px;
+  background-color: #029b16;
   color: white;
   text-decoration: none;
   border-radius: 4px;
   transition: background-color 0.3s;
 }
 
-/* when mouse moves on the link box, it will change color */
 .content-box a:hover, .content-box button:hover {
-  background-color: #4245e0;
+  background-color: #5ce042;
 }
 
-/* Estilos específicos para el botón "Mostrar Temas" si es necesario */
-.content-box button {
-  /* Añade aquí estilos específicos para el botón si los necesitas */
-  background-color: #dddddd; /* Por ejemplo, un color de fondo diferente */
-  color: black; /* Y un color de texto diferente */
+/* Ajustes específicos para el botón "Mostrar Temas" */
+.content-box button.show-details {
+  background-color: #dddddd;
+  color: black;
 }
+
+/* Estilos generales para los contenedores de niveles y temas */
+.level-container {
+  margin-top: 15px;
+}
+
+.topic-title {
+  background-color: #e7e7e7;
+  color: #333;
+  padding: 5px 8px;
+  margin-bottom: 5px;
+  width: auto;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.topic-content {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-left: 3px solid #01717b;
+  margin-bottom: 10px;
+}
+
+/* Estilos diferenciados por nivel */
+.nivel-sétimo .topic-title { background-color: #770486; }
+.nivel-octavo .topic-title { background-color: #06b5d8; }
+.nivel-noveno .topic-title { background-color: #c77d06; }
